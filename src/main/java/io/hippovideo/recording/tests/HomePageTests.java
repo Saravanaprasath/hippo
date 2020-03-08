@@ -13,21 +13,19 @@ public class HomePageTests extends TestBase {
     HomePage homePage;
     SoftAssert softAssert = new SoftAssert();
 
-
     public HomePageTests() {
         super();
         homePage = PageFactory.initElements(driver, HomePage.class);
     }
 
-
     @Test
     public void choosePlans() {
-        extentTest = extentReports.createTest("Choose plans");
+        extentTest = extentReports.createTest("Sign Up and Choose plans");
         boolean res = homePage.selectPlans();
         if (res) {
-            extentTest.log(PASS, "Able to choose plans");
+            extentTest.log(PASS, "Able to sign up and choose plans");
         } else {
-            extentTest.log(FAIL, "Unable to choose plans");
+            extentTest.log(FAIL, "Unable to sign up and choose plans");
         }
         extentReports.flush();
     }

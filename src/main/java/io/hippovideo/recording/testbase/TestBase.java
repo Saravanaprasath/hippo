@@ -52,10 +52,6 @@ public class TestBase {
                 System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver_mac");
             }
             ChromeOptions chromeOptions = new ChromeOptions();
-            //chromeOptions.addArguments("--disable-notifications");
-            //chromeOptions.addExtensions(new File("extentions/hippovideoext.crx"));
-            //DesiredCapabilities desiredCapabilities = DesiredCapabilities.chrome();
-            //desiredCapabilities.setCapability(ChromeOptions.CAPABILITY,chromeOptions);
             driver = new ChromeDriver(chromeOptions);
             driver.manage().window().maximize();
             driver.get(url);
@@ -66,7 +62,7 @@ public class TestBase {
 
     @AfterSuite
     public void getReport() {
-        //driver.close();
+        driver.close();
         extentReports.flush();
         System.out.println("Report Generated");
     }

@@ -87,9 +87,7 @@ public class HomePage extends TestBase {
             WebDriverWait wait = new WebDriverWait(driver, 15000);
             WebElement businessBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='business']//ancestor::div[@class='plan-button relative']")));
             businessBtn.click();
-            // business.click();
             personalizedMarketing.click();
-            //WebDriverWait wait = new WebDriverWait(driver, 10);
             WebElement nextBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Business-next-btn")));
             nextBtn.click();
             WebElement firstName = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='firstNameTxt']")));

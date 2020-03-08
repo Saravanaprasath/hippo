@@ -17,8 +17,6 @@ import java.util.concurrent.TimeUnit;
 public class RecordVideo {
     WebDriver driver;
     SoftAssert softAssert;
-    InputStream testData;
-    Properties prop;
 
     public RecordVideo(WebDriver driver) {
         this.driver = driver;
