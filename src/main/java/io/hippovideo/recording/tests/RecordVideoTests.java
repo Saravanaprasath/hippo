@@ -11,7 +11,6 @@ import static com.aventstack.extentreports.Status.PASS;
 
 public class RecordVideoTests extends TestBase {
     RecordVideo recordVideo;
-    SoftAssert softAssert = new SoftAssert();
 
     public RecordVideoTests() {
         super();
@@ -71,9 +70,9 @@ public class RecordVideoTests extends TestBase {
         extentTest = extentReports.createTest("Verify personalizations added");
         boolean res = recordVideo.verifyPersonalization();
         if (res) {
-            extentTest.log(PASS, "Verified successfully");
+            extentTest.log(PASS, "Added personalizations are verified successfully");
         } else {
-            extentTest.log(FAIL, "Added personalization not found");
+            extentTest.log(FAIL, "Added personalizations are not found");
         }
         extentReports.flush();
     }

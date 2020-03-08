@@ -11,7 +11,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
 import java.io.*;
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class RecordVideo {

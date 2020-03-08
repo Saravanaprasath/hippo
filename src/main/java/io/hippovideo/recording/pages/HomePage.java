@@ -11,19 +11,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
-import java.io.InputStream;
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class HomePage extends TestBase {
     WebDriver driver;
     SoftAssert softAssert;
-    InputStream testData;
-    Properties prop;
 
     public HomePage(WebDriver driver) {
         this.driver = driver;

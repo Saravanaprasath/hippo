@@ -4,15 +4,12 @@ import io.hippovideo.recording.pages.HomePage;
 import io.hippovideo.recording.testbase.TestBase;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import static com.aventstack.extentreports.Status.FAIL;
 import static com.aventstack.extentreports.Status.PASS;
 
 public class HomePageTests extends TestBase {
     HomePage homePage;
-    SoftAssert softAssert = new SoftAssert();
-
     public HomePageTests() {
         super();
         homePage = PageFactory.initElements(driver, HomePage.class);
